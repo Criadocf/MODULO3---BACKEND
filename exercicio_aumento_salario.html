@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento de salário</title>
+</head>
+
+<body>
+    <img src="images/tabajara.jpg" alt="tabajara" width="25%"><br/><br/><br/>
+
+    <div>
+        <form>
+            <label for="salario">Informe o salário atual:</label> 
+            <input type="number" id="salario"> <input type="button" id="reajuste" value="Reajuste" onclick="calcular()">
+
+            <p id="antes_reajuste"></p>
+            <p id="percentual_aumento"></p>
+            <p id="valor_aumento"></p>
+            <p id="novo_salario"></p>
+        </form>
+    </div>
+
+    <script>
+        const a_antes_reajuste = window.document.getElementById('salario')
+        
+
+        const a = window.document.getElementById('antes_reajuste')
+        const b = window.document.getElementsById('percentual_aumento')
+        const c = window.document.getElementsById('valor_aumento')
+        const d = window.document.getElementsById('novo_salario')
+
+
+        function calcular(){
+            const a_antes_reajuste_conversao = Number(a_antes_reajuste.value)
+            a.innerText = `Salário antes do reajuste: ${a_antes_reajuste_conversao}`
+            
+            if
+        }
+
+    </script>
+</body>
+
+</html>
